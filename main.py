@@ -28,8 +28,7 @@ Returns whether size of merged set is the same as the sum of the size of both se
 O(a + b)
 '''
 def containsCommonItemSets(arr1, arr2):
-	newset = set(arr1).union(set(arr2))
-	return len(newset) != len(arr1) + len(arr2)
+	return len(set(arr1).union(set(arr2))) != len(arr1) + len(arr2)
 	
 
 array1 = ['a', 'b', 'c', 'x']
